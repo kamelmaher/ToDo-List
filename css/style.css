@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Dosis:wght@300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.theme {
+    background-color: white !important;
+}
+.text-theme {
+    color: black !important;
+}
+body {
+    background-color: #181824;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+.background img {
+    width: 100%;
+}
+.app {
+    width: 350px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.app .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+.app .title h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+.add-task {
+    background-color: #181824;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.add-task input {
+    background-color: transparent;
+    border: 0;
+    padding: 15px 30px;
+    color: #fff;
+}
+.add-task input::placeholder {    
+    font-size: 13px;
+}
+.add-task input:focus {
+    outline: 0;
+}
+.add-task button {
+    background-color: transparent;
+    color: #888888;
+    font-size: 12px;
+    float: right;
+    border: 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.tasks {
+    background-color: #181824;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 1px rgb(104 101 101 / 20%)
+}
+.tasks span {
+    cursor: pointer;
+}
+li {
+    list-style: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #807d7d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tasks div:last-child {
+    color: #888888;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0;
+    padding: 15px;
+}
+.tasks li span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.tasks li p {
+    width: 100%;
+}
+.filter span {
+    padding: 0 3px;
+}
+.filter span.active {
+    color: rgb(101, 101, 235);
+}
+.completed {
+    text-decoration: line-through;
+    color: red;
+}
